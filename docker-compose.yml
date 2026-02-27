@@ -31,6 +31,8 @@ services:
       WAITFORIT_TIMEOUT: '120'
       AUTH_SERVER_URL: http://keycloak:8080/realms/bookshop
       AUTH_SERVER_PUBLIC_URL: http://localhost:8080/realms/bookshop
+      CART_AUDIENCE: account
+      PIM_AUDIENCE: account
       SHOP_CLIENT_ID: shop
       SHOP_CLIENT_SECRET: unknown
     ports:
