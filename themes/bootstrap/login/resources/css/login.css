@@ -18,6 +18,11 @@ h5, .h5 {
   max-width: 600px;
 }
 
+#kc-attempted-username {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
 button#kc-current-locale-link::after {
   content: "\2c5";
   margin-left: 4px;
@@ -89,4 +94,8 @@ div.logo-text span {
   background-image: url(../img/keycloak-ninja.svg);
   background-repeat: no-repeat;
   background-position: right center;
+}
+
+.mt-3n {
+  margin-top: -1rem;
 }

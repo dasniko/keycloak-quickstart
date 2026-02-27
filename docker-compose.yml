@@ -44,4 +44,4 @@ services:
 
 volumes:
   kc_data:
-    name: keycloak-workshop-light-data
+    name: keycloak-quickstart-data
