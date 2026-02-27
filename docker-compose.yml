@@ -1,5 +1,6 @@
 services:
   keycloak:
+    container_name: kcq_keycloak
     image: quay.io/keycloak/keycloak:26.5
     command: start-dev
     environment:
@@ -17,11 +18,13 @@ services:
       - ./themes:/opt/keycloak/themes
 
   mail:
+    container_name: kcq_mail
     image: axllent/mailpit:latest
     ports:
       - "8025:8025"
 
   bookshop:
+    container_name: kcq_bookshop
     image: ghcr.io/dasniko/keycloak-bookshop-demo:0.0.11
     command: [ "wait-for-it.sh", "keycloak:8080", "--", "/deployments/entrypoint.sh" ]
     environment:
@@ -38,9 +41,8 @@ services:
       - ./bookshop-keycloak.json:/usr/share/nginx/html/keycloak.json
 
   ldap:
-    container_name: kcd_ldap
+    container_name: kcq_ldap
     image: ghcr.io/dasniko/flintstones-ldap:latest
-    # bind user: cn=keycloak,dc=bedrock,dc=local
 
 volumes:
   kc_data:
