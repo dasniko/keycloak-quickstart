@@ -23,7 +23,7 @@ Folgende Docker Images werden im Workshop verwendet und können (sollten!) berei
 ```
 docker pull quay.io/keycloak/keycloak:26.6
 docker pull axllent/mailpit:latest
-docker pull ghcr.io/dasniko/flintstones_ldap:latest
+docker pull ghcr.io/dasniko/flintstones-ldap:latest
 docker pull ghcr.io/dasniko/keycloak-bookshop-demo:0.0.11
 ```
 
@@ -33,7 +33,7 @@ docker pull ghcr.io/dasniko/keycloak-bookshop-demo:0.0.11
   https://speakerdeck.com/dasniko/oauth2-oidc-and-jwt-important-basics
 * 📺 Status Quo of OAuth 2:  
   https://speakerdeck.com/dasniko/status-quo-of-oauth-2
-* 📖 Smiling Bookshop (Verteilte Anwendung, Basis Quarkus, Sprint Boot & React.JS):  
+* 📖 Smiling Bookshop (Verteilte Anwendung, Basis Quarkus, Spring Boot & React.JS):  
 https://github.com/dasniko/keycloak-bookshop-demo
 
 ## Links für die Workshop-Systeme
