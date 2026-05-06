@@ -65,6 +65,14 @@ https://github.com/dasniko/testcontainers-keycloak
 * Moderator @ Keycloak Community Forum:
 https://forum.keycloak.org/
 
+### Weitere Keycloak Trainings mit Niko
+
+🧑‍🎓 3-tägige Keycloak Masterclass:  
+https://n-k.de/trainings/keycloak-masterclass/  
+
+Öffentliche Trainings in Zusammenarbeit mit [socreatory - The Software Creators' Academy](https://www.socreatory.com/de/trainers/niko-koebler?ref=niko).  
+Individuelle und In-House-Trainings direkt von mir.
+
 ### Standards, Spezifikationen & BCP Guides
 
 #### OAuth 2.0
