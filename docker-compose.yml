@@ -4,6 +4,8 @@ services:
     image: quay.io/keycloak/keycloak:26.6
     command: start-dev
     environment:
+      # HTTP_PROXY: http://proxy:3128
+      # HTTPS_PROXY: http://proxy:3128
       KC_BOOTSTRAP_ADMIN_USERNAME: admin
       KC_BOOTSTRAP_ADMIN_PASSWORD: admin
       KC_HOSTNAME: 'http://localhost:8080'
