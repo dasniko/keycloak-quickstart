@@ -27,7 +27,7 @@ services:
 
   bookshop:
     container_name: kcq_bookshop
-    image: ghcr.io/dasniko/keycloak-bookshop-demo:0.0.11
+    image: ghcr.io/dasniko/keycloak-bookshop-demo:0.0.12
     command: [ "wait-for-it.sh", "keycloak:8080", "--", "/deployments/entrypoint.sh" ]
     environment:
       WAITFORIT_TIMEOUT: '120'
