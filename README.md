@@ -1,6 +1,6 @@
 # Keycloak Quickstart Workshop by @dasniko
 
-![](https://img.shields.io/badge/Keycloak-26.6-blue)
+![](https://img.shields.io/badge/Keycloak-26.7-blue)
 
 ## Voraussetzungen
 
@@ -8,20 +8,23 @@
 * [Docker](https://www.docker.com/) und [Docker Compose](https://docs.docker.com/compose/) V2 installiert und lauffähig unter `localhost` (ggf. lokale Admin-Rechte auf dem Rechner erteilen)  
   _(ggf. können Lizenzkosten für die Nutzung von Docker Desktop anfallen, bitte informieren! Docker Desktop ist je nach Plattform nicht unbedingt notwendig für den Betrieb von Docker. Support für Docker kann nicht im Rahmen des Trainings und der Vorbereitung dessen übernommen werden! U.U. funktioniert auch Podman, hierfür kann aber keinerlei Support bereitgestellt werden!)_
 * Internetzugriff (ggf. Proxy-/Firewall-/VPN-Konfigurationen etc. überprüfen)
-* Browser
+* aktueller Browser
 
-_Dieses Repository clonen oder über den u.a. Download-Link runterladen und entpacken._
+## Klonen oder Downloaden dieses Repositories
 
-## Download Workshop-Material
+Klone dieses Repository (empfohlen):
 
-👉 https://github.com/dasniko/keycloak-workshop-light/archive/refs/heads/main.zip
+    git clone https://github.com/dasniko/keycloak-quickstart.git
+
+oder lade und entpacke es:
+https://github.com/dasniko/keycloak-quickstart/archive/refs/heads/main.zip
 
 ## Docker Images
 
 Folgende Docker Images werden im Workshop verwendet und können (sollten!) bereits _vor_ dem Workshop (_aber nicht früher als 1 Woche davor!_) mit den folgenden Befehlen runtergeladen/gepullt werden:
 
 ```
-docker pull quay.io/keycloak/keycloak:26.6
+docker pull quay.io/keycloak/keycloak:26.7
 docker pull axllent/mailpit:latest
 docker pull ghcr.io/dasniko/flintstones-ldap:latest
 docker pull ghcr.io/dasniko/keycloak-bookshop-demo:0.0.12
@@ -31,8 +34,6 @@ docker pull ghcr.io/dasniko/keycloak-bookshop-demo:0.0.12
 
 * 📺 OAuth2, OIDC & JWT Basics:  
   https://speakerdeck.com/dasniko/oauth2-oidc-and-jwt-important-basics
-* 📺 Status Quo of OAuth 2:  
-  https://speakerdeck.com/dasniko/status-quo-of-oauth-2
 * 📖 Smiling Bookshop (Verteilte Anwendung, Basis Quarkus, Spring Boot & React.JS):  
 https://github.com/dasniko/keycloak-bookshop-demo
 
@@ -62,8 +63,6 @@ https://github.com/dasniko
 https://github.com/dasniko/keycloak-extensions-demo
 * Testcontainer-Keycloak Projekt:
 https://github.com/dasniko/testcontainers-keycloak
-* Moderator @ Keycloak Community Forum:
-https://forum.keycloak.org/
 
 ### Weitere Keycloak Trainings mit Niko
 

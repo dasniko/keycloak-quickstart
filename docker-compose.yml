@@ -1,17 +1,22 @@
+name: keycloak-quickstart
+
 services:
   keycloak:
     container_name: kcq_keycloak
-    image: quay.io/keycloak/keycloak:26.6
+    image: quay.io/keycloak/keycloak:26.7
     command: start-dev
     environment:
       # HTTP_PROXY: http://proxy:3128
       # HTTPS_PROXY: http://proxy:3128
+      # NO_PROXY: 'localhost,bookshop,ldap,127.0.0.0/8'
       KC_BOOTSTRAP_ADMIN_USERNAME: admin
       KC_BOOTSTRAP_ADMIN_PASSWORD: admin
       KC_HOSTNAME: 'http://localhost:8080'
       KC_HOSTNAME_BACKCHANNEL_DYNAMIC: 'true'
       KC_TRUSTSTORE_PATHS: /opt/keycloak/certs/rootCA.crt
       KC_TLS_HOSTNAME_VERIFIER: ANY
+      KC_SPI_EVENTS_LISTENER__WORKFLOW_EVENT_LISTENER__STEP_RUNNER_TASK_INTERVAL: 10s
+      QUARKUS_HTTP_LIMITS_MAX_HEADER_LIST_SIZE: 16384 #(default: 8192)
     ports:
       - "8080:8080"
     volumes:
